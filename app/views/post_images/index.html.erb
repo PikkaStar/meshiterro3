@@ -6,7 +6,7 @@
 <p><%= image_tag post_image.get_image %></p>
 <% end %>
 
-<p>ユーザー画像<%= image_tag 'sample-author1.jpg' %></p>
+<p>ユーザー画像<%= image_tag post_image.user.get_profile_image(100,100) %></p>
 
 <p><%= post_image.shop_name %></p>
 
